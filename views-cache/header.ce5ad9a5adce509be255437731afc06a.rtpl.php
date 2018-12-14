@@ -35,7 +35,7 @@
 				</div>
 
 				<span class="topbar-child1">
-					Frete Grátis para compras acima de R$100
+					Frete Grátis
 				</span>
 
 				<div class="topbar-child2">

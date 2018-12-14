@@ -122,6 +122,8 @@ class Cart extends Model{
 			':idproduct'=> $product->getidproduct()
 		]);
 
+		$this->getCalculateTotal();
+
 	}
 
 	public function removeProduct(Product $product, $all = false)
@@ -142,6 +144,8 @@ class Cart extends Model{
 				':idproduct'=>$product->getidproduct()
 			]);
 		}
+
+		$this->getCalculateTotal();
 	}
 
 	public function getProducts()
@@ -165,9 +169,41 @@ class Cart extends Model{
 
 	}
 
+	public function getProductsTotal()
+	{
+		$sql = new Sql();
+
+		$results = $sql->select("
+							SELECT SUM(vlprice) AS vlprice
+							 FROM tb_products a
+							 INNER JOIN tb_cartsproducts b ON a.idproduct = b.idproduct 
+							 WHERE b.idcart = :idcart AND b.dtremoved IS NULL", [
+							 						  ':idcart'=>$this->getidcart()
+							 ]);
+
+				if(count($results)>0){
+					return $results[0];
+				} else{
+					return [];
+				}
 
 
 
+	}
+
+	public function getValues()
+	{
+		$this->getCalculateTotal();
+
+		return parent::getValues();
+
+	}
+
+	public function getCalculateTotal()
+	{
+		$totals = $this->getProductsTotal();
+		$this->setvltotal($totals['vlprice']);
+	}
 
 }
 
