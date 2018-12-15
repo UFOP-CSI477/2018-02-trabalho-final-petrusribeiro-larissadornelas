@@ -1,6 +1,7 @@
 <?php if(!class_exists('Rain\Tpl')){exit;}?>
+
 	<!-- Title Page -->
-	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-01.jpg);">
+	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background:#b9b9b9;margin-bottom: 40px;">
 		<h2 class="l-text2 t-center" style="color:#555555;">
 			Carrinho
 		</h2>
@@ -21,6 +22,7 @@
 							<th class="column-5">Total</th>
 						</tr>
 						<?php $counter1=-1;  if( isset($products) && ( is_array($products) || $products instanceof Traversable ) && sizeof($products) ) foreach( $products as $key1 => $value1 ){ $counter1++; ?>
+
 						<tr class="table-row">
 							<td class="column-1">
 								<a href="/cart/<?php echo htmlspecialchars( $value1["idproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?>/remove"><div class="cart-img-product b-rad-4 o-f-hidden">
@@ -45,6 +47,7 @@
 							<td class="column-5">R$<?php echo htmlspecialchars( $value1["vltotal"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
 						</tr>
 						<?php } ?>
+
 					</table>
 				</div>
 			</div>
@@ -69,6 +72,7 @@
 				<div class="flex-w flex-sb-m p-b-12">
 					<span class="s-text18 w-size19 w-full-sm">
 						Subtotal: R$<?php echo htmlspecialchars( $cart["vltotal"], ENT_COMPAT, 'UTF-8', FALSE ); ?>
+
 					</span>
 
 					<span class="m-text21 w-size20 w-full-sm">
@@ -81,6 +85,7 @@
 				<div class="flex-w flex-sb-m p-t-26 p-b-30">
 					<span class="m-text22 w-size19 w-full-sm">
 						Total: R$<?php echo htmlspecialchars( $cart["vltotal"], ENT_COMPAT, 'UTF-8', FALSE ); ?>
+
 					</span>
 
 					<span class="m-text21 w-size20 w-full-sm">
@@ -90,7 +95,7 @@
 
 				<div class="size15 trans-0-4">
 					<!-- Button -->
-					<button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
+					<button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4" onclick="window.location.href='/checkout'">
 						Finalizar Compra
 					</button>
 				</div>
