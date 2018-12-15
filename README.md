@@ -47,6 +47,6 @@ XAMPP Server:3.3.2
   
 
 ### 5. Referências
-  Curso PHP 7 - Udemy, por Hcode Treinamentos. Disponível ein: <https://www.udemy.com/curso-php-7-online/>
-  AdminLTE Control Panel Template. Disponível em: <https://adminlte.io/>. Acesso em 15 Nov. 2018.
-  Template Fashe Colorlib. Disponível em: <https://colorlib.com/wp/template/fashe/>
+  Curso PHP 7 - Udemy, por Hcode Treinamentos. Disponível ein: <https://www.udemy.com/curso-php-7-online/>  
+  AdminLTE Control Panel Template. Disponível em: <https://adminlte.io/>. Acesso em 15 Nov. 2018.  
+  Template Fashe Colorlib. Disponível em: <https://colorlib.com/wp/template/fashe/>  
