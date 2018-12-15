@@ -39,7 +39,7 @@ XAMPP Server:3.3.2
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
   O banco de dados considerado para essa atividade está apresentadoa seguir:
-  
+ <img src= https://github.com/UFOP-CSI477/2018-02-trabalho-final-petrusribeiro-larissadornelas/blob/master/DB_ECOMMERCE.jpeg>
   
   Foram utilizados os seguintes templates:
     LTEAdmin: para a área Administrativa do site.
