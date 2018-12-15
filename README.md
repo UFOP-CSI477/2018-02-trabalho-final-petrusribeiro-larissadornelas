@@ -14,14 +14,14 @@ O objetivo deste documento é apresentar uma proposta de  loja virtual, e-commer
   O trabalho final tem como tema o desenvolvimento de um e-commerce. Onde será feito vendas de roupas e acessórios e o cliente pode navegar, adicionar ou remover itens do carrinho e finalizar a compra. A implementação utilizará as tecnologias/ferramentas: 
 Rain, Slim, Bootstrap, CSS, HTML, PHP, Sublime Text.
 
-Especificações:
-Navegador: Chrome 70
-PHP: 7.1.9
-phpmyadmin: 4.7.4
-Apache: 2.4.27
-MySQL: 5.7.19
-WAMP Server: 3.1.0
-XAMPP Server:
+Especificações:  
+Navegador: Chrome 70  
+PHP: 7.1.9  
+phpmyadmin: 4.7.4  
+Apache: 2.4.27  
+MySQL: 5.7.19  
+WAMP Server: 3.1.0  
+XAMPP Server:3.3.2  
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
@@ -47,5 +47,6 @@ XAMPP Server:
   
 
 ### 5. Referências
-
-  AdminLTE Control Panel Template. Disponível em: <https://adminlte.io/>. Acesso em 15 Nov. 2018.
+  Curso PHP 7 - Udemy, por Hcode Treinamentos. Disponível ein: <https://www.udemy.com/curso-php-7-online/>  
+  AdminLTE Control Panel Template. Disponível em: <https://adminlte.io/>. Acesso em 15 Nov. 2018.  
+  Template Fashe Colorlib. Disponível em: <https://colorlib.com/wp/template/fashe/>  
